@@ -27,7 +27,20 @@ package com.something._6kyu;
 public class BouncingBall {
 	
 	public static int bouncingBall(double h, double bounce, double window) {
-	    // your code
-      return 0;
+	    if (h > 0 && (bounce > 0 && bounce < 1) && window < h)
+	    	return getNumberOfwatches(h, bounce, window);
+	    else
+	    	return -1;
+	}
+
+	private static int getNumberOfwatches(final double height, final double bounce, final double window) {
+		int count = 0;
+		double balHeight = height;
+		do {
+			count++;
+			if ((balHeight *= bounce) > window)
+				count++;
+		} while (balHeight > window);
+		return count;
 	}
 }
