@@ -1,7 +1,7 @@
 package com.something._6kyu;
 
 public class EnoughIsEnough {
-//
+// https://www.codewars.com/kata/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times/train/java
 //		Alice and Bob were on a holiday.
 	// 	Both of them took many pictures of the places they've been,
 	// 	and now they want to show Charlie their entire collection.
@@ -27,6 +27,8 @@ public class EnoughIsEnough {
 //	EnoughIsEnough.deleteNth(new int[] {1,1,3,3,7,2,2,2,2}, 3) // return [1, 1, 3, 3, 7, 2, 2, 2]
 
 	public static int[] deleteNth(int[] elements, int maxOccurrences) {
+//		Arrays.stream(elements)
+//				.
 		//Code here ;)
 		return null;
 	}
